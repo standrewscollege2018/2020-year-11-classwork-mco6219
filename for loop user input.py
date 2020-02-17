@@ -4,7 +4,7 @@
 number_one = int(input("Enter a small number"))
 number_two = int(input("Enter a large number"))
 
-if counter in range(number_one, number_two + 1, 1):
+for counter in range(number_one, number_two + 1, 1):
     print(counter)
 
             
