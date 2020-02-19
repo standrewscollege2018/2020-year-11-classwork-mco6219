@@ -9,16 +9,22 @@ highest_name = ""
 # set up Boolean
 keep_asking = True
 
-# asking for user name and price they're willing to pay and set while loop
+# asking for user name, price they're willing to pay, highest bidder and highest price and set while loop
 while keep_asking == True:
     
     try:
         user_name = input("What is your name?")
         bid = int(input("What are you willing to pay for this item?"))
-    
-        if bid > highest_bid:
+        
+        if:
+            bid == -1
+            print("The auction for {} has now finished and the winner of the {} is {} with a bid of ${}".format(auction_item, auction item, highest_name, highest_bid)
+        elif bid > highest_bid:
             print("You are now the highest bidder")
     
-        elif bid < highest_bid:
+        else bid < highest_bid:
             print("The highest bidder is {} with a bid of ${}".format(highest_name, highest_bid))
-
+        
+        except:
+            pass 
+            
