@@ -16,15 +16,22 @@ while keep_asking == True:
         user_name = input("What is your name?")
         bid = int(input("What are you willing to pay for this item?"))
         
-        if:
-            bid == -1
-            print("The auction for {} has now finished and the winner of the {} is {} with a bid of ${}".format(auction_item, auction item, highest_name, highest_bid)
+        if bid == -1:
+           keep_asking = False 
+            
         elif bid > highest_bid:
             print("You are now the highest bidder")
-    
-        else bid < highest_bid:
+            highest_bid = bid
+            highest_name = user_name
+            
+        else:
             print("The highest bidder is {} with a bid of ${}".format(highest_name, highest_bid))
         
-        except:
+    except:
             pass 
-            
+
+# Check if reserve price is met
+if highest_bid >= reserve:
+    print("The auction for {} is finished with a bid of ${}".format(auction_item, highest_bid)) 
+else:
+    print("NOT SOLD")
