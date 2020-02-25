@@ -6,7 +6,7 @@ movies = []
 keep_asking = True
 
 while keep_asking == True:
-    movie_name = input("Enter a favourite movie")
+    movie_name = input("Enter a favourite movie\n")
     if movie_name == "stop":
         keep_asking = False 
         
