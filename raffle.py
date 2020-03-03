@@ -3,11 +3,13 @@
 # set list to store movies
 raffle = []
 import random
+
 # print intro and questions
 print("Welcome to the raffle")
 raffle_item = input("Enter the raffle item that's up for grabs:\n")
 raffle_value = int(input("Enter the raffle prize value:\n"))
 
+# a list of possible words user could type to stop loop program and end questions about the raffle
 stop_options = ["end", "stop"]
 
 # set boolean
